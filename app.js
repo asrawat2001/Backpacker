@@ -13,7 +13,7 @@ require('dotenv').config()
 
 //+++++++++++++ mongoose connection ++++++++++++
 var mongoos=require("mongoose")
-mongoos.connect('',{useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false,useCreateIndex:true},function(err){
+mongoos.connect('mongodb+srv://asrawat2001:AjmerRaj@cluster0.nfumwoy.mongodb.net/?retryWrites=true&w=majority',{useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false,useCreateIndex:true},function(err){
     if(err){
         console.log("cannot connect to database")
     }
